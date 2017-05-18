@@ -1,0 +1,19 @@
+// ~/dev/go/src/github.co/jddixon/gzog/ring_data.proto
+
+syntax = "proto3";
+
+package ringd;
+
+// we accept either information on a single host
+message HostInfo {
+  string host_name  = 1;    //  alphanumeric only
+  string ip_addr    = 2;    //  dotted quad; could be int32
+  string node_id    = 3;    //  hex (could equally be  bytes)
+  string pub_key    = 4;   
+  string privateKey = 5;   
+}
+
+// ... or info on one or more hosts
+message ringData {
+  repeated HostInfo hosts = 1;
+}
