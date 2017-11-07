@@ -1,2 +1,10 @@
-go/src/github.com/jddixon/ringd_go/CHANGES
+# go/src/github.com/jddixon/ringd_go/CHANGES
+
+v0.0.2
+    2017-11-07
+        * correct directory structure, config files                 SLOC  162
+v0.0.1
+    2017-05-18
+        * skeletal implemenation
+
 
